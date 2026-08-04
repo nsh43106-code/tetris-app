@@ -1,25 +1,3 @@
-pluginManagement {
-repositories {
-google();
-mavenCentral();
-gradlePluginPortal();
-}
-}
-
-dependencyResolutionManagement {
-repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS);
-repositories {
-google();
-mavenCentral();
-}
-}
-rootProject.name = &quot;tetris-app&quot;;
-include(&quot;:app&quot;);
-================================================================================
-فایل ۳: app/build.gradle.kts (داخل پوشه app)
-مسیر: tetris-app/app/build.gradle.kts
-توضیح: تنظیمات کامل بیلد اندروید، ورژن Compose و وابستگی‌ها (Dependencies)
-================================================================================
 plugins {
 id(&quot;com.android.application&quot;);
 id(&quot;org.jetbrains.kotlin.android&quot;);
@@ -63,4 +41,3 @@ implementation(&quot;androidx.compose.ui:ui&quot;);
 implementation(&quot;androidx.compose.ui:ui-graphics&quot;);
 implementation(&quot;androidx.compose.ui:ui-tooling-preview&quot;);
 implementation(&quot;androidx.compose.material3:material3&quot;);
-}
